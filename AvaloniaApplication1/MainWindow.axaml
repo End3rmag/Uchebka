@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication1.MainWindow"
+        Title="тарифы"
+		WindowStartupLocation="CenterScreen"
+		>
+	<Grid RowDefinitions="* 550 *" ColumnDefinitions="* 1050 *" ShowGridLines="True">
+		<TextBlock Text="beлайк" FontSize="45"
+				   VerticalAlignment="Bottom" HorizontalAlignment="Center"/>
+		<Button Grid.Column="2" Background="Crimson" Content="Войти"
+				FontSize="20"
+				Foreground="White" CornerRadius="20"
+				VerticalAlignment="Bottom" HorizontalAlignment="Center"
+				Click="Button_Click_Auth">
+		</Button>
+		<StackPanel Grid.Column="1" Grid.Row="1">
+			<ScrollViewer Background="AliceBlue" Width="1050" Height="750" VerticalAlignment="Center">
+				
+			</ScrollViewer>
+		</StackPanel>
+	</Grid>
+	
+</Window>
