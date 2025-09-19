@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\demo\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj": {}
+    "C:\\Users\\Zachi\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\demo\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj": {
+    "C:\\Users\\Zachi\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\demo\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\Zachi\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj",
         "projectName": "AvaloniaApplication1",
-        "projectPath": "C:\\Users\\demo\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj",
-        "packagesPath": "C:\\Users\\demo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\demo\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\obj\\",
+        "projectPath": "C:\\Users\\Zachi\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\AvaloniaApplication1.csproj",
+        "packagesPath": "C:\\Users\\Zachi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Zachi\\source\\repos\\AvaloniaApplication1\\AvaloniaApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\demo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Zachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -69,6 +69,42 @@
             "Avalonia.Themes.Fluent": {
               "target": "Package",
               "version": "[11.3.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Scripting": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Microsoft.CodeAnalysis.Common": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             }
           },
           "imports": [
@@ -87,7 +123,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
