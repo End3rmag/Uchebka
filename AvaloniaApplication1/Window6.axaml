@@ -1,0 +1,72 @@
+﻿<!-- Views/Window6.xaml -->
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AvaloniaApplication1.Models"
+        mc:Ignorable="d"
+        x:Class="AvaloniaApplication1.Views.Window6"
+        Title="Профиль"
+        Width="600"
+        Height="700"
+        WindowStartupLocation="CenterScreen"
+		x:DataType="local:ProfileViewModel">
+
+	<ScrollViewer>
+		<StackPanel Margin="20" Spacing="20">
+			<!-- Заголовок -->
+			<TextBlock Text="Мой профиль" FontSize="28" FontWeight="Bold"
+                      HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+			<!-- Информация о пользователе -->
+			<Border Background="White" CornerRadius="10" Padding="20"
+                   BorderBrush="#e0e0e0" BorderThickness="1">
+				<StackPanel Spacing="15">
+					<TextBlock Text="Личная информация" FontSize="18" FontWeight="Bold"/>
+
+					<Grid ColumnDefinitions="100,*" RowDefinitions="Auto,Auto,Auto,Auto" RowSpacing="10">
+						<TextBlock Text="ФИО:" Grid.Row="0" Grid.Column="0" FontWeight="Bold"/>
+						<TextBlock Text="{Binding UserName}" Grid.Row="0" Grid.Column="1"/>
+
+						<TextBlock Text="Телефон:" Grid.Row="1" Grid.Column="0" FontWeight="Bold"/>
+						<TextBlock Text="{Binding PhoneNumber}" Grid.Row="1" Grid.Column="1"/>
+
+						<TextBlock Text="Email:" Grid.Row="2" Grid.Column="0" FontWeight="Bold"/>
+						<TextBlock Text="{Binding Email}" Grid.Row="2" Grid.Column="1"/>
+
+						<TextBlock Text="Логин:" Grid.Row="3" Grid.Column="0" FontWeight="Bold"/>
+						<TextBlock Text="{Binding Login}" Grid.Row="3" Grid.Column="1"/>
+					</Grid>
+				</StackPanel>
+			</Border>
+
+			<!-- Информация о тарифе -->
+			<Border Background="White" CornerRadius="10" Padding="20"
+                   BorderBrush="#e0e0e0" BorderThickness="1">
+				<StackPanel Spacing="15">
+					<TextBlock Text="Текущий тариф" FontSize="18" FontWeight="Bold"/>
+
+					<TextBlock Text="{Binding CurrentTarif}" FontSize="16" Foreground="Blue"/>
+					<TextBlock Text="{Binding TarifPrice}" FontSize="14"/>
+					<TextBlock Text="{Binding TarifDescription}" TextWrapping="Wrap"/>
+				</StackPanel>
+			</Border>
+
+			<!-- Баланс -->
+			<Border Background="White" CornerRadius="10" Padding="20"
+                   BorderBrush="#e0e0e0" BorderThickness="1">
+				<StackPanel Spacing="15">
+					<TextBlock Text="Баланс" FontSize="18" FontWeight="Bold"/>
+					<TextBlock Text="{Binding Balance, StringFormat='{}{0}₽'}" FontSize="24" Foreground="Green"/>
+				</StackPanel>
+			</Border>
+
+			<!-- Кнопки -->
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+				<Button Content="Назад" Width="100" Click="BackButton_Click"/>
+				<Button Content="Выйти" Width="100" Background="Red" Foreground="White"
+                       Click="LogoutButton_Click"/>
+			</StackPanel>
+		</StackPanel>
+	</ScrollViewer>
+</Window>

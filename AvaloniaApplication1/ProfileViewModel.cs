@@ -4,7 +4,9 @@ namespace AvaloniaApplication1.Models
 {
     public class ProfileViewModel
     {
+        public string UserName { get; set; }
         public string PhoneNumber { get; set; }
+        public string Email { get; set; }
         public string Login { get; set; }
         public string CurrentTarif { get; set; }
         public decimal Balance { get; set; }
@@ -13,7 +15,9 @@ namespace AvaloniaApplication1.Models
 
         public ProfileViewModel(User user)
         {
+            UserName = $"{user.UserName} {user.UserLastName} {user.UserMidName ?? ""}";
             PhoneNumber = user.PhoneNumber;
+            Email = user.Email;
             Login = user.Login ?? "Не указан";
 
             var activeNumber = user.Numbers.FirstOrDefault();

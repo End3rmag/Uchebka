@@ -45,7 +45,7 @@
 							
 							<Button Background="Crimson" Content="Войти" Foreground="White"
 									HorizontalContentAlignment="Center"
-									Width="400" Margin="10 30"   >
+									Width="400" Margin="10 30" Click=""  >
 							</Button>
 							
 							<StackPanel Orientation="Horizontal" Margin="12 -20">

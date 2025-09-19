@@ -51,12 +51,15 @@
 				</Border>
 				<StackPanel   Width="420"  Margin="0 20"  >
 					<TextBlock Text="Номер телефона"  Margin="10 0"/>
-					<TextBox  Watermark="+7 000-000-00-00"
-							  Margin="10 0 20 0" Width="400"/>
+					<TextBox x:Name="PhoneTextBox" Watermark="+7 000-000-00-00"
+							Margin="10 0 20 0" Width="400"/>
+
+					<TextBlock x:Name="ErrorText" Text="" Foreground="Red"
+									   Margin="10,5" IsVisible="False"/>
 
 					<Button Background="Crimson" Content="Войти" Foreground="White"
 							HorizontalContentAlignment="Center"
-							Width="400" Margin="10 30"   >
+							Width="400" Margin="10 30" Click="LoginButton_Click">
 					</Button>
 					<StackPanel Orientation="Horizontal" Margin="12 -20">
 						<TextBlock Text="Нажмая «Войти», вы соглашаетесть с " Foreground="Gray"/>

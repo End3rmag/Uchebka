@@ -262,3 +262,4 @@ C:\Users\Zachi\source\repos\AvaloniaApplication1\AvaloniaApplication1\bin\Debug\
 C:\Users\Zachi\source\repos\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\Avalonia.FDB175D9.Up2Date
 C:\Users\Zachi\source\repos\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\AvaloniaApplication1.genruntimeconfig.cache
 C:\Users\Zachi\source\repos\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\ref\AvaloniaApplication1.dll
+C:\Users\Zachi\source\repos\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\AvaloniaApplication1.sourcelink.json
